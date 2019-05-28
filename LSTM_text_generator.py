@@ -7,7 +7,8 @@ from LSTM_model import lstm_model
 from pprint import pprint
 
 
-# Preprocess the text that the LSTM model can use.
+# read and convert the text into 
+# values that the LSTM model can use.
 text = open_file("edgar_allan_poe/edgar_allan_poe_complete_works.txt")
 preprocessor = Preprocessor(text)
 x_modified, y_modified = preprocessor.preprocessor()
