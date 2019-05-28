@@ -28,4 +28,4 @@ class Preprocessor(object):
         x_modified = x_modified / float(len(self.characters))
         y_modified = np_utils.to_categorical(self.y)
 
-        return self.X, self.y, x_modified, y_modified
+        return x_modified, y_modified
